@@ -6,37 +6,36 @@ const Rightside = () => {
     <Container>
       <FollowCard>
         <Title>
-          <h2>Add to your feed</h2>
-          <img src="/assets/feed-icon.svg" alt="" />
+          <h1 style={{ backgroundColor: "lavender" }}>Scholarships</h1>
         </Title>
 
         <FeedList>
           <li>
-            <Link to="/">
+            <Link to="/school_FILL0_wght400_GRAD0_opsz48 (1).svg">
               <Avatar />
             </Link>
 
             <div>
-              <span>#Linkedin</span>
-              <button>Follow</button>
+              {/* <span>#Scholarships</span> */}
+              <button>See Scholarships </button>
             </div>
           </li>
 
           <li>
             <Link to="/">
-              <Avatar />
+              <Avata />
             </Link>
 
             <div>
-              <span>#Video</span>
-              <button>Follow</button>
+              {/* <span>#Video</span> */}
+              <button>See Internships</button>
             </div>
           </li>
         </FeedList>
 
         <Recommendation>
-          View all recommendations
-          <img src="/assets/right-icon.svg" alt="" />
+          {/* View all recommendations
+          <img src="/assets/right-icon.svg" alt="" /> */}
         </Recommendation>
       </FollowCard>
 
@@ -59,7 +58,7 @@ const Container = styled.div`
 `;
 
 const FollowCard = styled.div`
-  background-color: #fff;
+  background-color: rgb(230, 168, 247);
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
@@ -114,7 +113,17 @@ const FeedList = styled.ul`
 `;
 
 const Avatar = styled.div`
-  background-image: url("https://static-exp1.licdn.com/sc/h/1b4vl1r54ijmrmcyxzoidwmxs");
+  background-image: url("/assets/school_FILL0_wght400_GRAD0_opsz48.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 48px;
+  margin-right: 8px;
+  width: 48px;
+`;
+
+const Avata = styled.div`
+  background-image: url("/assets/corporate_fare_FILL0_wght400_GRAD0_opsz48.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

@@ -15,7 +15,7 @@ const PostModal = ({ onExit }) => {
   const [assetArea, setAssetArea] = useState("");
 
   const handlePost = () => {
-    if (!assetArea && !text) {
+    if (!assetArea && !text) { 
       return;
     }
 
@@ -24,8 +24,8 @@ const PostModal = ({ onExit }) => {
       author: user.displayName,
       info: "LinkedIn member",
       date: new Date().toDateString(),
-      timestamp: serverTimestamp(),
-      description: text,
+      timestamp: serverTimestamp(new Date),
+      description:  text,
       media: {},
     };
 
@@ -35,7 +35,7 @@ const PostModal = ({ onExit }) => {
       postBody.media.videoURL = videoLink;
       addDoc(postsRef, postBody);
     } else if (sharedImage) {
-      const storageRef = ref(storage, `/files/${sharedImage}`);
+      const storageRef = ref(storage, `/files/${sharedImage.name}`);
       const uploadTask = uploadBytesResumable(storageRef, sharedImage);
       uploadTask.on(
         "state_changed",

@@ -5,12 +5,10 @@ const Ad = () => {
   return (
     <Container>
       <h5>
-        <Link to="/">Hiring in a hurry? - </Link>
+        <Link to="/">Connect with more students to enhence your career </Link>
       </h5>
 
-      <p>
-        Find talented pros in record time with Upwork and keep business moving.
-      </p>
+      <p>.</p>
     </Container>
   );
 };
@@ -21,7 +19,7 @@ const Container = styled.section`
   justify-content: center;
   margin-top: 70px;
   margin-bottom: 0;
-  min-height: 50px;
+  min-height: 20px;
   padding-bottom: 0;
   padding: 16px 0;
   text-align: center;
@@ -29,7 +27,7 @@ const Container = styled.section`
 
   h5 {
     color: #0a66c2;
-    font-size: 14px;
+    font-size: 17px;
 
     a {
       font-weight: 700;
@@ -44,7 +42,7 @@ const Container = styled.section`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0 5px;
+    padding: 5px 5px;
   }
 `;
 

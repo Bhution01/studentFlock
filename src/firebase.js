@@ -4,12 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const config = {
-  apiKey: process.env["REACT_APP_PRIVATE_KEY"],
-  authDomain: "samer-linkedin.firebaseapp.com",
-  projectId: "samer-linkedin",
-  storageBucket: "samer-linkedin.appspot.com",
-  messagingSenderId: "696743810485",
-  appId: "1:696743810485:web:1a71e92dbae0faae9cf5fc",
+  apiKey: "AIzaSyD-jXeL-5zOZBJknpf6NG6Wl5ajGk8hyyw",
+  authDomain: "studentflock-b97af.firebaseapp.com",
+  projectId: "studentflock-b97af",
+  storageBucket: "studentflock-b97af.appspot.com",
+  messagingSenderId: "525536377190",
+  appId: "1:525536377190:web:1abbff36b3b01a8b4870a7",
+  measurementId: "G-83S7MP4RY8",
 };
 
 const app = initializeApp(config);

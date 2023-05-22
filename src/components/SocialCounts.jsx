@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const SocialCounts = () => {
-  const random = () => Math.floor(Math.random() * 100 + 1);
+  const random = () => Math.floor(Math.random() * 5 + 1);
 
   return (
     <Container>

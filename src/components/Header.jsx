@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { getUserAuth, logoutUser } from "../store/user";
+import { myNetwork } from "../pages/myNetwork";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -11,14 +12,21 @@ const Header = () => {
     dispatch(logoutUser());
   };
 
+  function onClickHandler({ myNetwork }) {}
+
   return (
     <Container>
       <Content>
-        <Logo>
+        {/* <Logo>
           <Link to="/">
-            <img src="/assets/home-logo.svg" alt="" />
+            <img
+              className="studlogo"
+              src="/assets/studentFlock-logo-1.webp"
+              alt=""
+            />
           </Link>
-        </Logo>
+        </Logo> */}
+        <Logo src="/assets/studentFlock-logo-1.webp" alt="studentFlock logo" />
 
         <Search>
           <div>
@@ -35,23 +43,23 @@ const Header = () => {
             <NavList className="active">
               <Link to="/">
                 <img src="/assets/nav-home.svg" alt="" />
-                <span>Home</span>
+                <span>Home</span>``
               </Link>
             </NavList>
 
             <NavList>
-              <Link to="/">
-                <img src="/assets/nav-network.svg" alt="" />
+              <Link to="Network-page" onClick={onClickHandler}>
+                <img src="/assets/hub_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
                 <span>My Network</span>
               </Link>
             </NavList>
 
-            <NavList>
-              <Link to="/">
-                <img src="/assets/nav-jobs.svg" alt="" />
-                <span>Jobs</span>
+            {/* <NavList>
+              <Link to="/assets/student-cap-svgrepo-com.svg">
+                <img src="" alt="" />
+                <span>Scholarships</span>
               </Link>
-            </NavList>
+            </NavList> */}
 
             <NavList>
               <Link to="/">
@@ -60,12 +68,12 @@ const Header = () => {
               </Link>
             </NavList>
 
-            <NavList>
+            {/* <NavList>
               <Link to="/">
                 <img src="/assets/nav-notifications.svg" alt="" />
                 <span>Notifications</span>
               </Link>
-            </NavList>
+            </NavList> */}
 
             <User>
               <Link to="/">
@@ -86,16 +94,6 @@ const Header = () => {
 
               <SignOut onClick={handleSignOut}>Sign Out</SignOut>
             </User>
-
-            <Work>
-              <Link to="/">
-                <img src="/assets/nav-work.svg" alt="" />
-                <span>
-                  Work
-                  <img src="/assets/down-icon.svg" alt="" />
-                </span>
-              </Link>
-            </Work>
           </NavListWrap>
         </Nav>
       </Content>
@@ -123,13 +121,26 @@ const Content = styled.div`
   align-items: center;
   display: flex;
   margin: 0 auto;
-  max-width: 1128px;
+  max-width: 1228px;
   min-height: 100%;
+  ${"" /* background-color: rgb(175, 222, 144); */}
 `;
 
-const Logo = styled.span`
-  font-size: 0px;
-  margin-right: 8px;
+// const Logo = styled.span`
+//   font-size: 0px;
+//   margin-right: 8px;
+// `;
+
+const Logo = styled.img`
+  cursor: pointer;
+  object-fit: contain;
+  width: 115px;
+  margin: 5px 10px 5px -40px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1 0px 0 30px;
+    width: 95px;
+  }
 `;
 
 const Search = styled.div`
@@ -137,7 +148,7 @@ const Search = styled.div`
   opacity: 1;
   position: relative;
 
-  & > div {
+  div {
     max-width: 280px;
 
     input {

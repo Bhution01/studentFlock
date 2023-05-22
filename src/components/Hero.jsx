@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <Container>
       <HeroLeft>
-        <Heading>Welcome to your professional community</Heading>
+        <Heading>Welcome to Student community</Heading>
 
         <Google onClick={handleSignIn}>
           <GoogleLogo src="/assets/google.svg" alt="Google logo" />
@@ -30,7 +30,7 @@ const Hero = () => {
       </HeroLeft>
 
       <HeroImg
-        src="/assets/login-hero.svg"
+        src="/assets/studflock-main-modified.png"
         alt="Boy and girl sitting on a table, drinking coffee, and working on their laptops"
       />
     </Container>
@@ -61,7 +61,7 @@ const HeroLeft = styled.div`
 `;
 
 const Heading = styled.h1`
-  color: #2977c9;
+  color: rbg(171, 147, 194);
   font-size: 50px;
   font-weight: 200;
   line-height: 70px;
@@ -79,7 +79,7 @@ const Heading = styled.h1`
 
 const HeroImg = styled.img`
   object-fit: contain;
-  width: 40vw;
+  width: 45vw;
 
   @media screen and (max-width: 768px) {
     width: 90vw;

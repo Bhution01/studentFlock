@@ -76,6 +76,7 @@ const Leftside = () => {
 
 const Container = styled.div`
   grid-area: leftside;
+  background-color: rbg(171, 147, 194);
 
   @media screen and (max-width: 768px) {
     order: 1;
@@ -83,7 +84,7 @@ const Container = styled.div`
 `;
 
 const ArtCard = styled.div`
-  background-color: #fff;
+  background-color: rgb(175, 222, 144);
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
@@ -104,7 +105,7 @@ const UserInfo = styled.div`
 const CardBackground = styled.div`
   background-position: center;
   background-size: 462px;
-  background: url("/assets/card-bg.svg");
+  background-color: rbg(175, 222, 144);
   height: 54px;
   margin: -12px -12px 0;
 `;

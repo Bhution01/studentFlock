@@ -5,6 +5,7 @@ import LeftSide from "../components/LeftSide";
 import Main from "../components/Main";
 import RightSide from "../components/RightSide";
 
+
 const Home = () => {
   return (
     <Container>

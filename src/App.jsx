@@ -29,7 +29,9 @@ const App = ({ store }) => {
         <Route path="/" element={<Login />} />
       )}
 
-      <Route path="*" element={<Navigate to="/not-found" replace />} />
+      <Route path="/" element={<Navigate to="/not-found" replace />} />
+
+      <Route path="Network-page" element={<myNetwork />} />
     </Routes>
   );
 };

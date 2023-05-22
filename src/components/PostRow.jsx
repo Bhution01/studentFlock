@@ -36,7 +36,7 @@ const Container = styled.div`
   button {
     background-color: #fff;
     border-radius: 35px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.45);
     color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     flex-grow: 1;

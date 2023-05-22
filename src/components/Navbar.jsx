@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Nav>
-      <Logo src="/assets/login-logo.svg" alt="LinkedIn logo" />
+      <Logo src="/assets/studentFlock-logo-1.webp" alt="LinkedIn logo" />
 
       <Join>
         <JoinBtn>
@@ -32,7 +32,6 @@ const Nav = styled.nav`
 
 const Logo = styled.img`
   cursor: pointer;
-  height: 34px;
   object-fit: contain;
   width: 135px;
 
