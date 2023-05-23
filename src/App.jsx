@@ -7,6 +7,11 @@ import { getUserAuth } from "./store/user";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import Scholarships from "./pages/Scholarships";
+import Message from "./pages/Message";
+import Network from "./pages/Network";
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 
 const App = ({ store }) => {
   const user = useSelector(getUserAuth());
@@ -31,7 +36,12 @@ const App = ({ store }) => {
 
       <Route path="/" element={<Navigate to="/not-found" replace />} />
 
-      <Route path="Network-page" element={<myNetwork />} />
+      <Route path="/Network" element={<Network />} />
+      <Route path="/Scholarships" element={<Scholarships />} />
+      <Route path="/Message" element={<Message />} />
+      <Route path="/Signup" element={<Signup />} />
+      <Route path="/Signin" element={<Signin />} />
+      <Route path="/Home" element={<Home />} />
     </Routes>
   );
 };

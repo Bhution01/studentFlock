@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { getUserAuth, logoutUser } from "../store/user";
-import { myNetwork } from "../pages/myNetwork";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -11,8 +10,6 @@ const Header = () => {
   const handleSignOut = () => {
     dispatch(logoutUser());
   };
-
-  function onClickHandler({ myNetwork }) {}
 
   return (
     <Container>
@@ -48,7 +45,7 @@ const Header = () => {
             </NavList>
 
             <NavList>
-              <Link to="Network-page" onClick={onClickHandler}>
+              <Link to="/Network">
                 <img src="/assets/hub_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
                 <span>My Network</span>
               </Link>
@@ -62,7 +59,7 @@ const Header = () => {
             </NavList> */}
 
             <NavList>
-              <Link to="/">
+              <Link to="/Message">
                 <img src="/assets/nav-messaging.svg" alt="" />
                 <span>Messaging</span>
               </Link>

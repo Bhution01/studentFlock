@@ -17,7 +17,10 @@ const Rightside = () => {
 
             <div>
               {/* <span>#Scholarships</span> */}
-              <button>See Scholarships </button>
+              {/* <button>See Scholarships </button> */}
+              <Link to="/Scholarships">
+                <button type="button">See Scholarships</button>
+              </Link>
             </div>
           </li>
 

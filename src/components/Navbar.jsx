@@ -8,11 +8,11 @@ const Navbar = () => {
 
       <Join>
         <JoinBtn>
-          <Link to="/">Join now</Link>
+          <Link to="/Signup">Join now</Link>
         </JoinBtn>
 
         <SignInBtn>
-          <Link to="/">Sign In</Link>
+          <Link to="/Signin">Sign In</Link>
         </SignInBtn>
       </Join>
     </Nav>
